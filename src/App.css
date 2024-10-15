@@ -1,40 +1,28 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-  position: relative;
-  height: 100px;
-  margin-bottom: 20px;
-  transform: rotate(-30deg);
-  }
-}
-
-
+/* Style de base de l'application */
 .App {
   text-align: center;
   font-family: Arial, sans-serif;
 }
 
-
-.App-header {
-
-  padding: 20px;
-  color: white;
+/* Logo */
+.App-logo {
+  height: 100px;
+  pointer-events: none;
 }
 
 
 
+/* En-tête */
+.App-header {
+  font-size: 40px;
+  padding: 20px;
+  color: white;
+}
 
-input[name="newTask"] {
+/* Champ de saisie générique */
+input[name="genericInput"] {
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   border: 2px solid blue;
   border-radius: 4px;
   margin-right: 10px;
@@ -54,11 +42,14 @@ button {
   transition: background-color 0.3s ease;
 }
 
+
 table {
   width: 80%;
   margin: 20px auto;
   border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 
 thead {
   background-color: #3f61a0;
@@ -74,14 +65,16 @@ th, td {
 th {
   font-size: 18px;
 }
-td{
+
+td {
   align-items: center;
-  
 }
+
 
 tr:hover {
   background-color: #f1f1f1;
 }
+
 
 td button {
   background-color: #4caf50;
@@ -100,11 +93,12 @@ td button {
   font-size: 18px; 
   border-radius: 50%; 
   cursor: pointer;
-  width: 40px; /* Largeur du bouton rond */
-  height: 40px; /* Hauteur du bouton rond */
+  width: 40px;
+  height: 40px; 
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 
@@ -112,11 +106,4 @@ td button {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
